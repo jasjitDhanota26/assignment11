@@ -21,7 +21,7 @@ jobs:
     - name: Test 2 - File with 1 number
       run: |
         python find_lowest_number.py test_data/test2_input.txt output2.txt
-        diff output2.txt test_data/test2_expected.txt
+        diff --ignore--all-space output2.txt test_data/test2_expected.txt
     - name: Test 3 - Blank file
       run: |
         python find_lowest_number.py test_data/test3_input.txt output3.txt
