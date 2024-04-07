@@ -25,4 +25,6 @@ jobs:
     - name: Test 3 - Blank file
       run: |
         python find_lowest_number.py test_data/test3_input.txt output3.txt
+        echo >> output3.txt
+        echo >> test_data/test3_expected.txt
         diff output3.txt test_data/test3_expected.txt
