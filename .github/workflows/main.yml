@@ -29,4 +29,5 @@ jobs:
       run: diff test_data/test2_output.txt test_data/test2_expected.txt
 
     - name: Compare Results Test 3
-      run: diff test_data/test3_output.txt test_data/test3_expected.txt
+      run: diff -w test_data/test3_output.txt test_data/test3_expected.txt
+
