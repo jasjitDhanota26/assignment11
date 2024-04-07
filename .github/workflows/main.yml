@@ -16,11 +16,11 @@ jobs:
         python -m pip install --upgrade pip
     - name: Test 1 - File with 10 numbers
       run: |
-        python find_lowest_number.py test_data/test1_input.txt test1_output1.txt
+        python find_lowest_number.py test_data/test1_input.txt output1.txt
         diff output1.txt test_data/test1_expected.txt
     - name: Test 2 - File with 1 number
       run: |
-        python find_lowest_number.py test_data/test2_input.txt test2_output2.txt
+        python find_lowest_number.py test_data/test2_input.txt output2.txt
         diff output2.txt test_data/test2_expected.txt
     - name: Test 3 - Blank file
       run: |
